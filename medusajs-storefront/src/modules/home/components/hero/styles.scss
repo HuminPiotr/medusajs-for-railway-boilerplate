@@ -1,0 +1,50 @@
+@import '@/styles/variables.scss';
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &__filter {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #4C3D30;
+        opacity: .4;
+        mix-blend-mode: multiply;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        text-align: center;
+        font-family: var(--cormorant);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $whiteColor;
+        font-size: 80px;
+    }
+
+    &__image {
+
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 37%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}

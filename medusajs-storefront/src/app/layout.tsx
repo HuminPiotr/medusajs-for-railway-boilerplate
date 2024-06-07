@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import "styles/globals.css"
+import '@/styles/app.scss';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:8000"
 

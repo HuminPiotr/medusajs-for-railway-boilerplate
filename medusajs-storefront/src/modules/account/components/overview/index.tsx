@@ -59,7 +59,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                     return (
                       <li key={order.id}>
                         <LocalizedClientLink
-                          href={`/account/orders/details/${order.id}`}
+                          href={`/konto/orders/details/${order.id}`}
                         >
                           <Container className="bg-gray-50 flex justify-between items-center p-4">
                             <div className="grid grid-cols-3 grid-rows-2 text-small-regular gap-x-4 flex-1">

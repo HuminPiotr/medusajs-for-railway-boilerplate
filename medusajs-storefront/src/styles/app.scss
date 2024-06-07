@@ -1,0 +1,8 @@
+@import '@/styles/variables.scss';
+
+body {
+    background: $primaryColor;
+    color: $blackColor;
+    font-family: var(--lato) !important;
+    font-size: 1.6rem;
+}

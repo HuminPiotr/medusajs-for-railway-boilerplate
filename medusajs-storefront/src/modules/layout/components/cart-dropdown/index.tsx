@@ -64,7 +64,7 @@ const CartDropdown = ({
 
   // open cart dropdown when modifying the cart items, but only if we're not on the cart page
   useEffect(() => {
-    if (itemRef.current !== totalItems && !pathname.includes("/cart")) {
+    if (itemRef.current !== totalItems && !pathname.includes("/koszyk")) {
       timedOpen()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -80,7 +80,7 @@ const CartDropdown = ({
         <Popover.Button className="h-full">
           <LocalizedClientLink
             className="hover:text-ui-fg-base"
-            href="/cart"
+            href="/koszyk"
           >{`Koszyk (${totalItems})`}</LocalizedClientLink>
         </Popover.Button>
         <Transition
@@ -162,7 +162,7 @@ const CartDropdown = ({
                       })}
                     </span>
                   </div>
-                  <LocalizedClientLink href="/cart" passHref>
+                  <LocalizedClientLink href="/koszyk" passHref>
                     <Button className="w-full" size="large">
                       Go to cart
                     </Button>
@@ -177,7 +177,7 @@ const CartDropdown = ({
                   </div>
                   <span>Your shopping bag is empty.</span>
                   <div>
-                    <LocalizedClientLink href="/store">
+                    <LocalizedClientLink href="/sklep">
                       <>
                         <span className="sr-only">Go to all products page</span>
                         <Button onClick={close}>Explore products</Button>
