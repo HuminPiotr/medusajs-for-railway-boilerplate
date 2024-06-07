@@ -9,6 +9,8 @@ import { Fragment } from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
 
+import Hamburger from "../Hamburger"
+
 const SideMenuItems = {
   Home: "/",
   Store: "/store",
@@ -28,7 +30,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
             <>
               <div className="relative flex h-full">
                 <Popover.Button className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
-                  Menu
+                  <Hamburger />
                 </Popover.Button>
               </div>
 

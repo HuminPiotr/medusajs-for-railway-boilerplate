@@ -44,7 +44,7 @@ export default async function Nav() {
                 className="hover:text-ui-fg-base"
                 href="/account"
               >
-                Account
+                Konto
               </LocalizedClientLink>
             </div>
             <Suspense
