@@ -3,6 +3,7 @@
 .logo{
     max-width: 160px;
     position: relative;
+    top: 5px;
     margin: 10px auto;
     display: block;
     padding-right: 23px;
@@ -23,7 +24,7 @@
 
     &__logotype {
         position: absolute;
-        top: 4px;
+        top: -12px;
         left: -23px;
         animation: fallingLeaf 1s ease-out;
     }
