@@ -1,4 +1,4 @@
-# Frontend Dockerfile
+# Backend Dockerfile
 
 # Używamy obrazu Node.js
 FROM node:18-alpine
@@ -15,11 +15,5 @@ RUN yarn install
 # Kopiowanie reszty plików
 COPY . .
 
-# Budowanie aplikacji
-RUN yarn build
-
-# Ustawienie zmiennej środowiskowej dla URL backendu
-ENV BACKEND_URL=http://medusajs-backend:9000
-
-# Uruchomienie serwera Next.js
+# Uruchomienie serwera
 CMD ["yarn", "start"]
