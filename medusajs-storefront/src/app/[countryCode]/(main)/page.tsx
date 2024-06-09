@@ -1,7 +1,7 @@
 import { Product } from "@medusajs/medusa"
-import { Metadata } from "next"
+import { Metadata } from "next";
 
-import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
+import { getCollectionsList, getProductsList, getRegion } from "@lib/data";
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/heroContainer"
 import { ProductCollectionWithPreviews } from "types/global"
@@ -69,7 +69,7 @@ export default async function Home({
   return (
     <>
       <Hero />
-      <div className="py-12">
+      <div className="py-48 ">
         <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
         </ul>

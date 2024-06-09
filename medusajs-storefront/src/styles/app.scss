@@ -1,8 +1,22 @@
 @import '@/styles/variables.scss';
 
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robot, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
 body {
     background: $primaryColor;
-    color: $blackColor;
+    color: $blackColor !important;
     font-family: var(--lato) !important;
     font-size: 1.6rem;
 }
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+

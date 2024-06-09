@@ -1,0 +1,81 @@
+@import "@/styles/variables.scss";
+
+.footer 
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+
+    &__background {
+        z-index: 0;
+        position: absolute;
+        top: 50% !important;   
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        opacity: 7%;
+    }
+
+    &__main {
+        background-color: $whiteColor;
+        padding: 105px 0;
+        color: $blackColor;
+        position: relative;
+        height: 664px;
+
+        .footer__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__bottom {
+        background-color: $blackColor;
+        color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 36px 0;
+    }
+
+    &__info {
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+
+        &-nav {
+
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__header {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 3.6rem;
+
+        &--small {
+            font-size: 1.6rem;
+        }
+    }
+}
