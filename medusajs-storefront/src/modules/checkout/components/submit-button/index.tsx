@@ -10,7 +10,7 @@ export function SubmitButton({
   className,
 }: {
   children: React.ReactNode
-  variant?: "primary" | "secondary" | "transparent" | "danger" | null
+  variant?: "primary" | "secondary" | "transparent" | "danger" | null 
   className?: string
 }) {
   const { pending } = useFormStatus()
