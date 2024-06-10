@@ -12,11 +12,11 @@ import CountrySelect from "../country-select"
 import Hamburger from "../Hamburger"
 
 const SideMenuItems = {
-  "Strona główna": "/",
-  Sklep: "/sklep",
-  Szukaj: "/szukaj",
-  Konto: "/konto",
-  Koszyk: "/koszyk",
+  Home: "/",
+  Store: "/store",
+  Search: "/search",
+  Account: "/account",
+  Cart: "/cart",
 }
 
 const SideMenu = ({ regions }: { regions: Region[] | null }) => {

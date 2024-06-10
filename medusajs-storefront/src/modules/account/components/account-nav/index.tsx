@@ -27,9 +27,9 @@ const AccountNav = ({
   return (
     <div>
       <div className="small:hidden">
-        {route !== `/${countryCode}/konto` ? (
+        {route !== `/${countryCode}/account` ? (
           <LocalizedClientLink
-            href="/konto"
+            href="/account"
             className="flex items-center gap-x-2 text-small-regular py-2"
           >
             <>
@@ -46,7 +46,7 @@ const AccountNav = ({
               <ul>
                 <li>
                   <LocalizedClientLink
-                    href="/konto/profile"
+                    href="/account/profile"
                     className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                   >
                     <>
@@ -60,7 +60,7 @@ const AccountNav = ({
                 </li>
                 <li>
                   <LocalizedClientLink
-                    href="/konto/addresses"
+                    href="/account/addresses"
                     className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                   >
                     <>
@@ -74,7 +74,7 @@ const AccountNav = ({
                 </li>
                 <li>
                   <LocalizedClientLink
-                    href="/konto/orders"
+                    href="/account/orders"
                     className="flex items-center justify-between py-4 border-b border-gray-200 px-8"
                   >
                     <div className="flex items-center gap-x-2">
@@ -110,22 +110,22 @@ const AccountNav = ({
           <div className="text-base-regular">
             <ul className="flex mb-0 justify-start items-start flex-col gap-y-4">
               <li>
-                <AccountNavLink href="/konto" route={route!}>
+                <AccountNavLink href="/account" route={route!}>
                   Overview
                 </AccountNavLink>
               </li>
               <li>
-                <AccountNavLink href="/konto/profile" route={route!}>
+                <AccountNavLink href="/account/profile" route={route!}>
                   Profile
                 </AccountNavLink>
               </li>
               <li>
-                <AccountNavLink href="/konto/addresses" route={route!}>
+                <AccountNavLink href="/account/addresses" route={route!}>
                   Addresses
                 </AccountNavLink>
               </li>
               <li>
-                <AccountNavLink href="/konto/orders" route={route!}>
+                <AccountNavLink href="/account/orders" route={route!}>
                   Orders
                 </AccountNavLink>
               </li>

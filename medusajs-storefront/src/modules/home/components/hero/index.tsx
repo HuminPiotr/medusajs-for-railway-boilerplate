@@ -19,7 +19,7 @@ const Hero = () => {
         <h2 className='hero__title'>
             Nadaj swojemu wnętrzu duszę.
         </h2>
-        <ButtonLink href="/sklep" className="hero__button" >
+        <ButtonLink href="/store" className="hero__button" >
           Wejście
         </ButtonLink>
     </section>
