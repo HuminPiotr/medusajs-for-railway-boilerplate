@@ -50,7 +50,7 @@ export default async function Footer() {
                             </ul>
                         </nav>
                         <div className="footer__facebook">
-                            <Image src="/images/icons/facebook.svg" alt="Icon Facebook Hollandstyle" width={24} height={24}  />
+                            {/* <Image src="/images/icons/facebook.svg" alt="Icon Facebook Hollandstyle" width={24} height={24}  /> */}
                         </div>
                     </div>
                 </div>

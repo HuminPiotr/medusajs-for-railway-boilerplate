@@ -8,13 +8,13 @@ import ButtonLink from '@/app/components/ButtonLink';
 const Hero = () => {
   return (
     <section className='hero'>
-        <Image 
+        {/* <Image 
             src="/images/background-shop.jpg" 
             className='hero__image' 
             fill  
             quality={100}
             alt="Wnętrze sklepu Hollandstyle"
-        />
+        /> */}
         <div className="hero__filter"></div>
         <h2 className='hero__title'>
             Nadaj swojemu wnętrzu duszę.
