@@ -1,7 +1,7 @@
 import { Github } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
 
-import Hero from "../Hero";
+import Hero from "@modules/home/components/Hero"
 
 const HeroContainer = () => {
   return (
