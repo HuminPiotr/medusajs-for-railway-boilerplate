@@ -54,14 +54,14 @@ export default async function Footer() {
                         </div>
                     </div>
                 </div>
-                <Image 
+                {/* <Image 
                     src="/images/ornament_footer.png"
                     alt="Footer ornament" 
                     className="footer__background"
                     layout="fill"
                     objectFit="contain"
                     quality={100}
-                />
+                /> */}
             </div>
 
             <div className="footer__bottom">
