@@ -1,7 +1,8 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
+// import { Github } from "@medusajs/icons"
+// import { Button, Heading } from "@medusajs/ui"
 
-import Hero from "@modules/home/components/Hero"
+// import Hero from "@modules/home/components/Hero"
+import Hero from "@modules/home/components/Hero/index";
 
 const HeroContainer = () => {
   return (
