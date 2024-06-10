@@ -2,7 +2,7 @@
 // import { Button, Heading } from "@medusajs/ui"
 
 // import Hero from "@modules/home/components/Hero"
-import Hero from "@modules/home/components/Hero/index";
+import Hero from "@modules/home/components/hero";
 
 const HeroContainer = () => {
   return (
