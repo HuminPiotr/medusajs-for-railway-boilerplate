@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 // import Footer from "@modules/layout/templates/footer"
-import Footer from "@modules/layout/templates/footer_new";
+import Footer from "@modules/layout/templates/footer";
 // import Nav from "@modules/layout/templates/nav"
 import Nav from "@modules/layout/components/nav"
 

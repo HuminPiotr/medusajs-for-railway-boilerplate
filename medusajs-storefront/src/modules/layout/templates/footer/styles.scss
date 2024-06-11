@@ -50,6 +50,11 @@
             gap: 8px;
             margin-bottom: 3.6rem;
         }
+
+        a:hover {
+            transition: .3s;
+            color: $secondaryColor;
+        }
     }
 
     &__menu {
@@ -57,7 +62,7 @@
         flex-direction: column;
 
         &-nav {
-
+            margin-bottom: 44px;
         }
     }
 
@@ -78,4 +83,5 @@
             font-size: 1.6rem;
         }
     }
+
 }
