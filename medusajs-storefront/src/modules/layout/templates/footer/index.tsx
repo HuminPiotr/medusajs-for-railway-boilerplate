@@ -13,9 +13,8 @@ export default async function Footer() {
 
     return (
         <footer className="footer">
-
             <div className="footer__main">
-                <div className="footer__container content-container">
+                <div className="footer__container container">
                     <div className="footer__logo"><Logo /></div>
                     <div className="footer__info">
                         <h4 className="footer__header">Kontakt</h4>
@@ -71,7 +70,7 @@ export default async function Footer() {
                 © {new Date().getFullYear()} Eco Hollandstyle. Wszelkie prawa zastrzeżone.
                 </div>
             </div>
-
+                        
         </footer>
     )
 }
