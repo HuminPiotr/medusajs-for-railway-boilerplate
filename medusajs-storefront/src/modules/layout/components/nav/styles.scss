@@ -1,0 +1,146 @@
+@import "@/styles/variables";
+
+.topbar {
+    font-family: Lato, sans-serif;
+    color: $blackColor;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__panel {
+        position:  relative;
+        height: 100%;
+        z-index: 100;
+        background: $primaryColor;
+        border-bottom: solid 1px $blackColor;
+        transition: .2s;
+
+        &-leftMenu{
+            display: flex;
+            align-items: center;
+        }
+
+        &-rightMenu{
+            font-size: 1.4rem;
+            text-transform: uppercase !important;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+
+        &-navigation {
+            margin-left: 24px;
+
+            ul {
+                display: flex;
+                gap: 16px;
+            }
+    
+            &-link {
+                text-transform: uppercase;
+                font-size: 14px;
+                transition: .3s;
+    
+                &:hover a{
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        padding: 72px 0;
+        color: $blackColor;
+        background-color: $whiteColor;
+        margin-top: 1px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $blackColor;
+        transform: translateY(-125%);
+        transition: .3s;
+        z-index: 0;
+
+        &--open {
+            transform: translateY(0%);
+        }
+
+
+        &-left {
+            display: flex;
+
+            p {
+              margin: 0 0 16px 0;
+            }
+            svg {
+                margin-top: 29px;
+            }
+        }
+
+        &-right {
+
+        }
+
+        &-column {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+        }
+
+        &-link {
+            margin-bottom: 8px;
+            font-size: 16px;
+
+            &:hover{
+                color: $secondaryColor;
+            }
+
+            &--main {
+                font-size: 32px;
+                font-family: var(--cormorant);
+                margin-bottom: 27px;
+            }
+        }
+
+        &__facebook {
+            margin-top: 29px;
+        }
+    }
+
+    // VARIANT
+    &--white {
+        color: white;
+        .topbar__panel{
+            background-color: rgba(255,255,255, 0);
+            border-color: $whiteColor;
+        }
+
+
+        
+        .topbar__panel {
+            background-color: rgba(255,255,255, 0);
+
+            &-navigation-link {
+                a {
+                    color: $whiteColor;
+
+                    &:hover {
+                        color: $blackColor;
+                        transition: .3s;
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

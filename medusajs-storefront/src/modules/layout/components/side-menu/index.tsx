@@ -19,7 +19,7 @@ const SideMenuItems = {
   Cart: "/cart",
 }
 
-const SideMenu = ({ regions }: { regions: Region[] | null }) => {
+const SideMenu = ({ regions, color }: { regions: Region[] | null, color: string }) => {
   const toggleState = useToggleState()
 
   return (
@@ -30,7 +30,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
             <>
               <div className="relative flex h-full">
                 <Popover.Button className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
-                  <Hamburger />
+                  <Hamburger color={color}/>
                 </Popover.Button>
               </div>
 
