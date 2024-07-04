@@ -5,20 +5,21 @@ import './styles.scss';
 import React, {useState, useEffect} from 'react';
 import { usePathname } from 'next/navigation';
 
-import { headers } from "next/headers"
 import { Suspense } from "react"
 
-import { listRegions } from "@lib/data"
+// import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
-import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
 import Logo from "@modules/layout/components/Logo"
 
+
+
 export interface TopBarProps  {
   variant?: "default" | "white";
+  children: React.ReactNode;
 }
 
-const Nav: React.FC<TopBarProps> = ({variant = "default"})  =>{
+const TopBar: React.FC<TopBarProps> = ({children, variant = "default"})  =>{
   const [menuIsOpen, setMenu] = useState(false);
   const [isAboveHero, setIsAboveHero] = useState(false);
   const pathname = usePathname();
@@ -77,17 +78,8 @@ const Nav: React.FC<TopBarProps> = ({variant = "default"})  =>{
               >
                 Konto
             </LocalizedClientLink>
-          <Suspense
-              fallback={
-                <LocalizedClientLink
-                  className=""
-                  href="/cart"
-                >
-                  Koszyk (0)
-                </LocalizedClientLink>
-              }
-            >
-              <CartButton />
+            <Suspense fallback={<LocalizedClientLink className="" href="/cart">Koszyk (0)</LocalizedClientLink>}>
+              {children}
             </Suspense>
             </div>
 
@@ -212,4 +204,4 @@ const Nav: React.FC<TopBarProps> = ({variant = "default"})  =>{
   // )
   
 }
-export default Nav;
+export default TopBar;

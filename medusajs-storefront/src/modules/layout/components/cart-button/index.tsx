@@ -1,3 +1,4 @@
+
 import { LineItem } from "@medusajs/medusa"
 
 import { enrichLineItems, retrieveCart } from "@modules/cart/actions"
@@ -15,8 +16,11 @@ const fetchCart = async () => {
   return cart
 }
 
-export default async function CartButton() {
+const CartButton = async () => {
   const cart = await fetchCart()
 
   return <CartDropdown cart={cart} />
 }
+
+
+export default CartButton;
